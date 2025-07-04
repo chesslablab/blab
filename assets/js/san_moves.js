@@ -20,7 +20,7 @@ const notation = decodeURIComponent(params.get("notation"));
 const movetext = decodeURIComponent(params.get("movetext"));
 
 try {
-  const response = await fetch(`https://${window.location.hostname}/wp-content/plugins/blab/endpoints/san.php`, {
+  const response = await fetch(`https://${window.location.hostname}/wp-content/plugins/blab-chess/endpoints/san.php`, {
     method: "POST",
     headers: {
       'Content-Type': 'application/json',

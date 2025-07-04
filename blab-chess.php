@@ -5,14 +5,14 @@
  *
  * @wordpress-plugin
  * Plugin Name:       Blab Chess
- * Plugin URI:        https://wordpress.org/plugins/blab
+ * Plugin URI:        https://wordpress.org/plugins/blab-chess
  * Description:       A web toolkit for chess content creators.
  * Version:           1.0.0
  * Requires at least: 6.8
  * Requires PHP:      8.1
  * Author:            ChesslaBlab
- * Author URI:        https://github.com/chesslablab/blab
- * Text Domain:       blab
+ * Author URI:        https://github.com/chesslablab/blab-chess
+ * Text Domain:       blab-chess
  * License:           GPL v3
  * License URI:       https://www.gnu.org/licenses/gpl-3.0.html
  */
