@@ -21,7 +21,7 @@ WP Chess provides with a handful of WordPress shortcodes for chess content creat
 
 = Documentation =
 
-Read the latest docs [here](https://chesslablab.github.io/wpchess/).
+Read the latest docs [here](https://chesslablab.github.io/blab-chess/).
 
 == Screenshots ==
 1. Display a chess game.
