@@ -1,0 +1,173 @@
+/* ------------------------------------------------------------------------- */
+/* HTML Tags                                                                 */
+/* ------------------------------------------------------------------------- */
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  display: flex;
+  font-size: 14px;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Grid                                                                      */
+/* ------------------------------------------------------------------------- */
+
+#left,
+#right {
+  width: 50%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Menu                                                                      */
+/* ------------------------------------------------------------------------- */
+
+#menu {
+  display: flex;
+  margin-top: 0.3rem;
+}
+
+/* ------------------------------------------------------------------------- */
+/* History Buttons                                                           */
+/* ------------------------------------------------------------------------- */
+
+#historyButtons {
+  display: flex;
+  width: 80%;
+}
+
+#historyButtons button {
+  cursor: pointer;
+  border: 0;
+  width: 25%;
+  padding: 0.5rem;
+  background-color: #ebebeb;
+}
+
+#historyButtons button:hover,
+#historyButtons button:focus {
+  background-color: #dddddd;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Board Actions Dropdown                                                    */
+/* ------------------------------------------------------------------------- */
+
+#boardActionsDropdown {
+  width: 20%;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Moves Browser                                                             */
+/* ------------------------------------------------------------------------- */
+
+#movesBrowser.inline span[data-key] {
+  display: inline-block;
+  padding: 0rem 0.25rem 0rem 0.25rem ;
+}
+
+#movesBrowser.inline span[data-key] span:nth-child(1) {
+  display: inline-block;
+  padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+}
+
+#movesBrowser.inline span[data-key] span:nth-child(2) {
+  display: inline-block;
+  padding: 0.3rem 0.2rem 0.3rem 0.2rem;
+}
+
+#movesBrowser.inline span[data-key] span:hover {
+  cursor: pointer;
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
+#movesBrowser .active-move {
+  background-color: #6c757d !important;
+  color: #fff !important;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Moves Metadata                                                            */
+/* ------------------------------------------------------------------------- */
+
+#movesMetadataTable tr td:nth-child(1) {
+  text-align: left;
+}
+
+#movesMetadataTable tr td:nth-child(2) {
+  text-align: center;
+}
+
+#movesMetadataTable tr td:nth-child(3) {
+  text-align: right;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Dropdown Menu                                                             */
+/* ------------------------------------------------------------------------- */
+
+.dropbtn {
+  background-color: #ebebeb;
+  border: none;
+  cursor: pointer;
+}
+
+.dropbtn i {
+  pointer-events: none;
+}
+
+.dropbtn:hover,
+.dropbtn:focus {
+  background-color: #dddddd;
+}
+
+.dropdown {
+  position: relative;
+  display: grid;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  top: -98px;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 0.5rem;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+/* ------------------------------------------------------------------------- */
+/* Media Queries                                                             */
+/* ------------------------------------------------------------------------- */
+
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+  }
+
+  #left,
+  #right {
+    width: 100%;
+  }
+
+  #movesBrowser {
+    max-height: 100px;
+    overflow-y: auto;
+  }
+}

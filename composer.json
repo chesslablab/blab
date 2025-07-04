@@ -1,0 +1,5 @@
+{
+    "require": {
+        "chesslablab/php-chess": "^1.6"
+    }
+}

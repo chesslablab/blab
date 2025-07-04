@@ -1,0 +1,11 @@
+iframe.blab {
+  border: 0;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+
+p.blab-error {
+  border: 1px solid red;
+  color: red;
+  padding: 1rem;
+}
