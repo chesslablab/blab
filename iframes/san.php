@@ -11,14 +11,16 @@ if ( ! wp_verify_nonce( $nonce ) ) {
     exit;
 }
 
-$content = $_GET['movetext'];
+$atts = $_GET;
 
-unset($_GET['movetext'], $_GET['_wpnonce']);
+unset( $atts['movetext'], $atts['_wpnonce'] );
+
+$content = isset ( $_GET['movetext'] ) ? $_GET['movetext'] : '';
 
 try {
     ( new San_Shortcode() )
-        ->sanitize( $_GET, $content )
-        ->validate( $_GET, $content );
+        ->sanitize( $atts, $content )
+        ->validate( $atts, $content );
 } catch ( \Throwable $e ) {
     http_response_code( 500 );
     exit;
