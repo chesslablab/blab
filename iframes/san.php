@@ -15,7 +15,7 @@ $atts = $_GET;
 
 unset( $atts['movetext'], $atts['_wpnonce'] );
 
-$content = isset ( $_GET['movetext'] ) ? $_GET['movetext'] : '';
+$content = isset ( $_GET['movetext'] ) ? wp_unslash( $_GET['movetext'] ) : '';
 
 try {
     ( new San_Shortcode() )
