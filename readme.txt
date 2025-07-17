@@ -12,16 +12,20 @@ A web toolkit for chess content creators.
 
 == Description ==
 
-WP Chess provides with a handful of WordPress shortcodes for chess content creators to engage with their audience.
+Blab Chess provides with a handful of WordPress shortcodes for chess content creators to engage with their audience.
+
+== External Services ==
+
+Please note that some of these shortcodes are intended to display an iframe by querying an HTTP service that runs on your site through the Blab plugin as per the docs below.
+
+= Documentation =
+
+Read the latest docs [here](https://chesslablab.github.io/blab-chess/).
 
 = Features =
 
 * Display a chess game into your own website as an HTML iframe without any third-party cookies.
 * Explain a chess position in terms of concepts like a tutor.
-
-= Documentation =
-
-Read the latest docs [here](https://chesslablab.github.io/blab-chess/).
 
 == Screenshots ==
 1. Display a chess game.

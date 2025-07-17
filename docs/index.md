@@ -1,12 +1,15 @@
 # Blab Chess
 
-Blab Chess provides with a handful of WordPress shortcodes for content creators to engage with their audience.
+The [Blab Chess](https://github.com/chesslablab/blab-chess) plugin provides with a handful of WordPress shortcodes for chess content creators to engage with their audience.
+
+Please note that some of these shortcodes are intended to display an iframe by querying an HTTP service that runs on your site through the Blab plugin.
 
 ## `blab_san`
 
-Display a chess game in SAN format as an HTML iframe.
+Display a chess game in SAN format as an HTML iframe. 
 
-All parameters listed below are optional, if not explicitly provided the default value will be used.
+- All parameters listed below are optional, if not explicitly provided the default value will be used.
+- The `/endpoints/san.php` service will be queried under the hood using the POST method.
 
 ### `fen` (optional)
 
