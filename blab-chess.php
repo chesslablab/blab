@@ -7,7 +7,7 @@
  * Plugin Name:       Blab Chess
  * Plugin URI:        https://wordpress.org/plugins/blab-chess
  * Description:       A web toolkit for chess content creators.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 6.8
  * Requires PHP:      8.1
  * Author:            ChesslaBlab
@@ -26,7 +26,7 @@ require_once __DIR__ . '/includes/class-blab-chess-abstract-shortcode.php';
 require_once __DIR__ . '/includes/class-blab-chess-san-shortcode.php';
 require_once __DIR__ . '/includes/class-blab-chess-tutor-shortcode.php';
 
-define( 'BLAB_VERSION', '1.0.0' );
+define( 'BLAB_VERSION', '1.0.1' );
 
 define( 'BLAB_PLUGIN', __FILE__ );
 

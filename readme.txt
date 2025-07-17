@@ -3,7 +3,7 @@ Contributors: rfc1123
 Tags: chess, board, game, display, edit
 Requires at least: 6.8
 Tested up to: 6.8
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 Requires PHP: 8.1
 License: GPLv3
 License URI: http://www.gnu.org/licenses/gpl-3.0.html
@@ -33,5 +33,11 @@ Read the latest docs [here](https://chesslablab.github.io/blab-chess/).
 3. Display a chess game from a particular position using SAN notation, the black pieces on the bottom and the standard pieces.
 
 == Changelog ==
+
 = 1.0.0 =
+
 * Plugin released.
+
+= 1.0.1 =
+
+* Plugin review.
