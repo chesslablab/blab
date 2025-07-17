@@ -11,19 +11,14 @@ if ( ! wp_verify_nonce( $nonce ) ) {
     exit;
 }
 
-$atts = [
-    'fen' => $_GET['fen'],
-    'notation' => $_GET['notation'],
-    'orientation' => $_GET['orientation'],
-    'pieces' => $_GET['pieces'],
-];
-
 $content = $_GET['movetext'];
+
+unset($_GET['movetext'], $_GET['_wpnonce']);
 
 try {
     ( new San_Shortcode() )
-        ->sanitize( $atts, $content )
-        ->validate( $atts, $content );
+        ->sanitize( $_GET, $content )
+        ->validate( $_GET, $content );
 } catch ( \Throwable $e ) {
     http_response_code( 500 );
     exit;
