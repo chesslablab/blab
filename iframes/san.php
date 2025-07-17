@@ -4,7 +4,7 @@ require_once __DIR__ . '/../includes/class-blab-chess-abstract-shortcode.php';
 require_once __DIR__ . '/../includes/class-blab-chess-san-shortcode.php';
 require_once __DIR__ . '/../../../../wp-load.php';
 
-$nonce = isset( $_GET['_wpnonce'] ) ? sanitize_text_field( $_GET['_wpnonce'] ) : '';
+$nonce = isset( $_GET['_wpnonce'] ) ? sanitize_text_field( wp_unslash ( $_GET['_wpnonce'] ) ) : '';
 
 if ( ! wp_verify_nonce( $nonce ) ) { 
     http_response_code( 401 );
