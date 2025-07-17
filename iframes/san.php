@@ -11,11 +11,11 @@ if ( ! wp_verify_nonce( $nonce ) ) {
     exit;
 }
 
+$content = isset ( $_GET['movetext'] ) ? sanitize_text_field( wp_unslash( $_GET['movetext'] ) ) : '';
+
 $atts = $_GET;
 
 unset( $atts['movetext'], $atts['_wpnonce'] );
-
-$content = isset ( $_GET['movetext'] ) ? wp_unslash( $_GET['movetext'] ) : '';
 
 try {
     ( new San_Shortcode() )
